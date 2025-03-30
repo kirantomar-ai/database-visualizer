@@ -1,14 +1,16 @@
 import "./App.css";
+import AppLayout from "../src/layouts/AppLayout";
+import AppRoutes from "./routes/AppRoutes";
+import AppInitialiser from "./AppInitialiser";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <>
+      <AppInitialiser />
+      <AppLayout>
+        <AppRoutes />
+      </AppLayout>
+    </>
   );
 }
 
